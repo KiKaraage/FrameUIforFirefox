@@ -1,12 +1,13 @@
 # Welcome to my fork of FrameUIforFirefox!
-Original theme by FineFuturity. Tweaks by [MrOtherGuy/firefox-csshacks](https://mrotherguy.github.io/firefox-csshacks/), [bmFTzQ/Edge-Frfox](https://github.com/bmFtZQ/edge-frfox) & [Shina-SG/Shina-Fox](https://github.com/Shina-SG/Shina-Fox). Fork & modifications by KiKaraage.
+Original theme by FineFuturity. Tweaks by [MrOtherGuy/firefox-csshacks](https://mrotherguy.github.io/firefox-csshacks/), [bmFTzQ/Edge-Frfox](https://github.com/bmFtZQ/edge-frfox) & [Shina-SG/Shina-Fox](https://github.com/Shina-SG/Shina-Fox). Fork & modifications by KiKaraage.  *(Issues, questions or feedbacks can be submitted here or in [Reddit](https://old.reddit.com/r/FirefoxCSS/comments/1bzos14/presenting_my_version_of_frameui_for_firefox/))*
 
-Additional features:
+## Additional features:
 * Optimization for compact mode, devices with smaller screens: smaller icons scale, smaller & centered URL font size, stripped URL bar background.
 * Fluent icons & Ms Edge-like hamburger menu/context menu styling (derived from Edge-Frfox).
 * Pop-up searchbar (derived from Shina-Fox) | Enable by adding new Boolean preference in `about:config`: `uc.tweak.popup-search`
 * Multi-panel Sidebery setup | Enable by putting codes from [sidebery-css-style](https://github.com/KiKaraage/ArcWTF/blob/main/sidebery-css-style) onto the Sidebery styles editor.
 * **Update 1**: Enabling frame configuration for true Polaroid experience | Enable by adding new Boolean preference in `about:config`: `uc.tweak.frame`
+* **Update 1**: To enable autohidden sidebar, you can replace codes in "D) SIDEBAR" section, after line 948, with [this code](https://github.com/KiKaraage/ArcWTF/blob/main/tweaks/sidebar.css) while installing Userchrome Toggle altogether (you can refer to [ArcWTF readme]([h](https://github.com/KiKaraage/ArcWTF)) for clearer setup tutorial on UCT).
 * Suggested addons to use: [Adaptive Tab Bar Color](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) for adaptive theming | [Gesturefy](https://github.com/Robbendebiene/Gesturefy) for easier page navigations, less clicks | [MaxFocus Link Preview](https://addons.mozilla.org/en-US/firefox/addon/maxfocus-link-preview/reviews/), alternatives to Peek features in Arc Browser
 * Font used in screenshots: Google Sans Text | Add on your userChrome/userContent: `* {font-family: "Google Sans Text" !important;}
 `
@@ -55,7 +56,7 @@ Version 0.1:
 * FrameUI was designed to have the window control buttons on the bottom. However, due to the way that fullscreen windows work on macOS, the window control buttons will remain at the top of the window like other macOS apps. This complication is not present in windowed mode.
 
 # Prerequisites
-* For this to work, make sure `toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true` in `about:config`.
+* For this to work, make sure `toolkit.legacyUserProfileCustomizations.stylesheets` and `svg.context-properties.content.enabled` is set to `true` in `about:config`.
 * To make the most of this theme, it is **STRONGLY recommended** that you install an addon for vertical tabs, such as Tab Center Reborn.  **This is a stopgap for now until I figure out how to integrate native vertical tab functionality into the theme.**
 * If you're on Linux, make sure your window controls are set to be on the right side of your title bar.
 
@@ -64,9 +65,6 @@ Version 0.1:
 Simply drop the provided `userChrome.css` file into your `chrome` folder and restart for the changes to take effect.
 
 # Motivation
-After restarting, you'll notice that *all* of the controls -- the navigation bar, the window controls, *everything* -- has been moved to the bottom in a manner reminiscent of the Metro-based Internet Explorer app seen in Windows 8/8.1.  While I think Microsoft was on the right track with their attempts at a tablet-based interface... well, we all know what happened.  Apart from Microsoft's attempt at a touch interface (which was a half-done attempt anyway), I think no company to this day has yet to get right.
+_(by FineFuturity)_ After restarting, you'll notice that *all* of the controls -- the navigation bar, the window controls, *everything* -- has been moved to the bottom in a manner reminiscent of the Metro-based Internet Explorer app seen in Windows 8/8.1.  While I think Microsoft was on the right track with their attempts at a tablet-based interface... well, we all know what happened.  Apart from Microsoft's attempt at a touch interface (which was a half-done attempt anyway), I think no company to this day has yet to get right.
 
-This theme is a step towards what I believe may solve the grand problem of unifying the desktop and tablet interface for ANY device form factor.  What I hope you'll find is that this interface works really well on *both* tablet and desktop form factors, precisely because there is no longer a need for a user to lift their arms to get to something as basic as the window controls -- they're now just a mere finger reach away.  
-
-# Reporting Issues
-FYI, this project is my first go at using CSS.  As this is the initial release on top of that, I anticipate there will be issues.  If you encounter any bugs or other issues, please post a thread and I'll do what I can, when I can. Also: as this theme is a both a thought experiment and work in progress, it is possible the look and feel will change over time.  I welcome any and all suggestions for how this could be improved.  :)
+This theme is a step towards what I believe may solve the grand problem of unifying the desktop and tablet interface for ANY device form factor.  What I hope you'll find is that this interface works really well on *both* tablet and desktop form factors, precisely because there is no longer a need for a user to lift their arms to get to something as basic as the window controls -- they're now just a mere finger reach away. 
