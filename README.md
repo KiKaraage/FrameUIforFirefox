@@ -6,7 +6,7 @@ Original theme by FineFuturity. Tweaks by [MrOtherGuy/firefox-csshacks](https://
 * Fluent icons & Ms Edge-like hamburger menu/context menu styling (derived from Edge-Frfox).
 * Pop-up searchbar (derived from Shina-Fox) | Enable by adding new Boolean preference in `about:config`: `uc.tweak.popup-search`
 * Multi-panel Sidebery setup | Enable by putting codes from [sidebery-css-style](https://github.com/KiKaraage/ArcWTF/blob/main/sidebery-css-style) onto the Sidebery styles editor.
-* **Update 1**: Enabling frame configuration for true Polaroid experience | Enable by adding new Boolean preference in `about:config`: `uc.tweak.frame`
+* **Update 1**: Enabling frame configuration for true Polaroid experience | Enable by adding new Boolean preference in `about:config`: `uc.tweak.frame` *(You can also adjust rounded corner radius in ~line 1125 of the userChrome)*
 * **Update 1**: To enable autohidden sidebar, you can replace codes in "D) SIDEBAR" section, after line 948, with [this code](https://github.com/KiKaraage/ArcWTF/blob/main/tweaks/sidebar.css) while installing Userchrome Toggle altogether (you can refer to [ArcWTF readme]([h](https://github.com/KiKaraage/ArcWTF)) for clearer setup tutorial on UCT).
 * Suggested addons to use: [Adaptive Tab Bar Color](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) for adaptive theming | [Gesturefy](https://github.com/Robbendebiene/Gesturefy) for easier page navigations, less clicks | [MaxFocus Link Preview](https://addons.mozilla.org/en-US/firefox/addon/maxfocus-link-preview/reviews/), alternatives to Peek features in Arc Browser
 * Font used in screenshots: Google Sans Text | Add on your userChrome/userContent: `* {font-family: "Google Sans Text" !important;}
