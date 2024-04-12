@@ -2,7 +2,6 @@
 /* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
 
 #sidebar {
-  margin-bottom: var(--uc-tweak-rounded-corners-padding) !important;
   border-bottom-right-radius: var(--uc-tweak-rounded-corners-radius) !important;
   border-bottom-left-radius: var(--uc-tweak-rounded-corners-radius) !important;
 }
@@ -17,8 +16,8 @@
 }
 
 #sidebar-box {
-  --uc-sidebar-width: 55px;
-  --uc-sidebar-hover-width: 200px;
+  --uc-sidebar-width: 50px;
+  --uc-sidebar-hover-width: 220px;
   --uc-autohide-sidebar-delay: 100ms; /* Wait 0.1s before hiding sidebar */
   --uc-autohide-transition-duration: 115ms;
   --uc-autohide-transition-type: linear;
@@ -36,7 +35,7 @@
 /* if this preference is activated in about:config, sidebar width will be increased */
 @media (-moz-bool-pref: "uc.tweak.longer-sidebar") {
   :root #sidebar-box {
-    --uc-sidebar-hover-width: 250px !important;
+    --uc-sidebar-hover-width: 260px !important;
   }
 }
 
@@ -55,7 +54,7 @@
 }
 
 #main-window[sizemode="maximized"] #sidebar-box {
-  --uc-sidebar-width: 55px;
+  --uc-sidebar-width: 50px;
 }
 #main-window[sizemode="fullscreen"] #sidebar-box {
   --uc-sidebar-width: 0.3rem;
@@ -168,23 +167,8 @@
   & #statuspanel {
     margin-left: 2px;
   }
-
-  & #sidebar {
-    margin-inline-start: calc(
-      var(--uc-tweak-rounded-corners-padding) - 3px
-    ) !important;
-  }
-  
-  & #sidebar-header {
-    margin-inline-start: calc(
-      var(--uc-tweak-rounded-corners-padding) - 3px
-    ) !important;
-  }
-  
+    
   & #sidebar-box:hover > #sidebar {
-    margin-inline-start: calc(
-      var(--uc-tweak-rounded-corners-padding) - 3px
-    ) !important;
     min-width: var(--uc-sidebar-hover-width) !important;
     transition-delay: 0ms !important;
   }
