@@ -4,6 +4,8 @@
 
 @import url("icons/icons.css");
 @import url("popup-search.css");
+@import url("edgy-sidebar.css") (-moz-bool-pref: "uc.tweak.autohide-sidebar");
+
 
 /* A) NECCESSITIES */
 /* make theming work */
@@ -947,72 +949,75 @@
 
 /* D) SIDEBAR */
 
+@media not (-moz-bool-pref: "uc.tweak.autohide-sidebar") {
 #sidebar-title {
-  padding-inline: 4px !important;
-  opacity: 70% !important;
-}
+   padding-inline: 4px !important;
+   opacity: 70% !important;
+ }
 
-#sidebar-switcher-target {
-  padding: 0px 0px 2px 0px !important;
-}
+ #sidebar-switcher-target {
+   padding: 0px 0px 2px 0px !important;
+ }
 
-#sidebar-header #sidebar-switcher-target #sidebar-icon {
-  scale: 0.8 !important;
-  opacity: 70% !important;
-}
+ #sidebar-header #sidebar-switcher-target #sidebar-icon {
+   scale: 0.8 !important;
+   opacity: 70% !important;
+ }
 
-#sidebar-header {
-  overflow: hidden;
-  color: var(--chrome-color, inherit) !important;
-  padding: 6px 0 2px 0 !important;
-  font-size: 1em !important;
-  font-weight: bold !important;
-  border-bottom: 0 !important;
-  border-top-right-radius: var(--uc-tweak-rounded-corners-radius) !important;
-}
+ #sidebar-header {
+   overflow: hidden;
+   color: var(--chrome-color, inherit) !important;
+   padding: 6px 0 2px 0 !important;
+   font-size: 1em !important;
+   font-weight: bold !important;
+   border-bottom: 0 !important;
+   border-top-right-radius: var(--uc-tweak-rounded-corners-radius) !important;
+ }
 
-#sidebar-splitter {
-  opacity: 0% !important;
-}
+ #sidebar-splitter {
+   opacity: 0% !important;
+ }
 
+/* Uncomment if you want to hide sidebar icon and switcher arrow; but the sidebar won't be resizeable */
 /* #sidebar-header #sidebar-switcher-target #sidebar-icon,
-#sidebar-header #sidebar-switcher-target #sidebar-switcher-arrow,
-#sidebar-splitter {
-  visibility: collapse !important;
-} */
+ #sidebar-header #sidebar-switcher-target #sidebar-switcher-arrow,
+ #sidebar-splitter {
+   visibility: collapse !important;
+ } */
 
-#sidebar-close.close-icon.tabbable {
-  scale: 0.7 !important;
-  opacity: 40% !important;
-}
+ #sidebar-close.close-icon.tabbable {
+   scale: 0.7 !important;
+   opacity: 40% !important;
+ }
 
-@media (-moz-bool-pref: "uc.tweak.hide-sidebar-header") {
-  #sidebar-header {
-    visibility: collapse !important;
-  }
-}
+ @media (-moz-bool-pref: "uc.tweak.hide-sidebar-header") {
+   #sidebar-header {
+     visibility: collapse !important;
+   }
+ }
 
-#sidebar-header::before,
-#sidebar-header::after {
-  content: "";
+ #sidebar-header::before,
+ #sidebar-header::after {
+   content: "";
 /*  display: flex; */
-  padding-left: 8px;
-}
+   padding-left: 8px;
+ }
 
-#sidebar-header,
-#sidebar {
-  background-color: var(--lwt-accent-color) !important;
-}
+ #sidebar-header,
+ #sidebar {
+   background-color: var(--lwt-accent-color) !important;
+ }
 
-.sidebar-panel {
-  background-color: var(--lwt-accent-color) !important;
-  color: var(--newtab-text-primary-color) !important;
-}
+ .sidebar-panel {
+   background-color: var(--lwt-accent-color) !important;
+   color: var(--newtab-text-primary-color) !important;
+ }
 
-.sidebar-panel #search-box {
-  -moz-appearance: none !important;
-  background-color: var(--lwt-accent-color) !important;
-  color: inherit !important;
+ .sidebar-panel #search-box {
+   -moz-appearance: none !important;
+   background-color: var(--lwt-accent-color) !important;
+   color: inherit !important;
+ }
 }
 
 /* E) EXTENSIONS MENU */ 
