@@ -1,11 +1,14 @@
 /* PINNED TABS */
 
 /* Control how much pinned tabs column you want below, width of the pinned tabs will be automatically resized depend on it. */
-/* *#root.root {--pinned-tabs-col: 3;}
-#root.root {--tabs-pinned-width: calc( (96vw - (var(--tabs-margin)*var(--pinned-tabs-col))) / var(--pinned-tabs-col));} */
-#root.root {--tabs-pinned-width: 35px;}
-#root.root {--tabs-pinned-height: 35px;}
+#root.root {--pinned-tabs-col: 3;}
+#root.root {--tabs-pinned-width: calc( (96vw - (var(--tabs-margin)*var(--pinned-tabs-col))) / var(--pinned-tabs-col));}
 
+@media (max-width: 50px){
+#root.root {--tabs-pinned-width: 35px;}
+}
+
+#root.root {--tabs-pinned-height: 35px;}
 .Tab[data-pin="true"] .body {
 	box-shadow: 0px 2px 1px #00000000;
   background: #f2f2f250;
