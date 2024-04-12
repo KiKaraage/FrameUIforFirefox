@@ -20,7 +20,7 @@
 
 #root.root {--tabs-height: 33px;}
 #root.root {--tabs-margin: 7px;}
-#root.root {--tabs-indent: 12px;}
+#root.root {--tabs-indent: 20px;}
 #root.root {padding-top: 6px;}
 #root.root {--tabs-close-btn-margin: 5px;}
 #root.root {--tabs-inner-gap: 8px;}
@@ -34,6 +34,11 @@
 	background-clip: text;
 	color: transparent;
 }
+
+@media (max-width: 50px){
+  .Tab.Tab{ padding-left: 0 }
+}
+
 
 /* Uncomment this to apply custom font - Make sure to install the font first */
 #root.root {--tabs-font: 0.9rem Google Sans Text;}
