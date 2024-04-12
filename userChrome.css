@@ -4,7 +4,7 @@
 
 @import url("icons/icons.css");
 @import url("popup-search.css");
-@import url("edgy-sidebar.css") (-moz-bool-pref: "uc.tweak.autohide-sidebar");
+@import url("autohide-sidebar.css") (-moz-bool-pref: "uc.tweak.autohide-sidebar");
 
 
 /* A) NECCESSITIES */
