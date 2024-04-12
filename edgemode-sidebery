@@ -1,7 +1,11 @@
 /* PINNED TABS */
 
-#root.root {--tabs-pinned-width: 40px;}
-#root.root {--tabs-pinned-height: 36px;}
+/* Control how much pinned tabs column you want below, width of the pinned tabs will be automatically resized depend on it. */
+/* *#root.root {--pinned-tabs-col: 3;}
+#root.root {--tabs-pinned-width: calc( (96vw - (var(--tabs-margin)*var(--pinned-tabs-col))) / var(--pinned-tabs-col));} */
+#root.root {--tabs-pinned-width: 35px;}
+#root.root {--tabs-pinned-height: 35px;}
+
 .Tab[data-pin="true"] .body {
 	box-shadow: 0px 2px 1px #00000000;
   background: #f2f2f250;
@@ -14,13 +18,13 @@
 
 /* GENERAL */
 
-#root.root {--tabs-height: 36px;}
-#root.root {--tabs-margin: 8px;}
-#root.root {--tabs-indent: 18px;}
+#root.root {--tabs-height: 33px;}
+#root.root {--tabs-margin: 7px;}
+#root.root {--tabs-indent: 12px;}
 #root.root {padding-top: 6px;}
 #root.root {--tabs-close-btn-margin: 5px;}
-#root.root {--tabs-inner-gap: 10px;}
-#root.root {--general-border-radius: 6px;}
+#root.root {--tabs-inner-gap: 8px;}
+#root.root {--general-border-radius: 9px;}
 #root .popup-container {background-color: transparent;}
 #root .hidden-panels-popup-layer:before {background-color: transparent;}
 
@@ -31,8 +35,12 @@
 	color: transparent;
 }
 
-/* Uncomment this to apply Segoe UI Variable font - Make sure to install the font first */
+/* Uncomment this to apply custom font - Make sure to install the font first */
 #root.root {--tabs-font: 0.9rem Google Sans Text;}
+
+.ScrollBox > .top-shadow[data-show="true"], .ScrollBox > .bottom-shadow[data-show="true"] {
+  opacity: 0.3;
+}
 
 /* NEW TAB BUTTON*/
 
@@ -64,7 +72,7 @@
   justify-content: left;
   content: "New Tab";
   font: var(--tabs-font);
-  padding-left: calc(var(--tabs-inner-gap) + var(--tabs-margin) + 40px);
+  padding-left: calc(var(--tabs-inner-gap) + var(--tabs-margin) + 55px);
   margin-top: 4px;
   color: var(--nav-btn-fg);  
   opacity: 40%;
@@ -82,9 +90,10 @@
 .top-horizontal-box {
   display: flex; 
   order: 1;
-  margin-left: 13px;
+  margin-left: 10px;
   margin-right: 5px;
   margin-top: -3px;
+  margin-bottom: 5px;
 }
 
 /* Remove background color, border and shadow for active tab panel. */
